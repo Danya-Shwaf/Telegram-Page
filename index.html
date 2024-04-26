@@ -11,7 +11,7 @@
     make height  100vh 
     make it flex container with column direction
     -->
-    <div class="h-full ">
+    <div class="h-[100vh] flex flex-col">
         <!-- Header -->
         <div class="header bg-[#323232] text-center text-[#d1d1d1] max-w-full p-1">
             <h4>Telegram</h4>
@@ -26,25 +26,25 @@
                         2. make the spaces in left and right same
                         3. but also you have w-[60px] in the parent so you only need to center this items using align center
                     -->
-                    <div class="text-[#8e8e8e] text-center ml-1 my-4">
+                    <div class="text-[#8e8e8e] text-center mb-3 mt-3">
                         <i class="fa-solid fa-comments text-2xl"></i>
                         <h4 class="text-xs">All Chats</h4>
                     </div>
-                    <div  class=" text-[#8e8e8e] text-center ml-2 my-4">
+                    <div  class=" text-[#8e8e8e] text-center mb-3">
                         <i class="fa-solid fa-folder-closed text-2xl"></i>
                         <h4 class="text-xs">Work</h4>
                     </div>
-                    <div class=" text-white text-center ml-2 my-4">
+                    <div class=" text-white text-center mb-3">
                         <i class="fa-solid fa-folder-closed text-2xl"></i>
                         <h4 class="text-xs">Personal</h4>
                     </div>
-                    <div  class=" text-[#8e8e8e] text-center ml-2 my-4">
+                    <div  class=" text-[#8e8e8e] text-center mb-3">
                         <i class="fa-solid fa-folder-closed text-2xl"></i>
                         <h4 class="text-xs">Public</h4>
                     </div>
                 </div>
                 <div>
-                      <!-- 
+                    <!-- 
                         TODO : 
                         fix spacing issue 
                     -->
@@ -70,9 +70,9 @@
                         </div>
                         <div class="flex text-xs text-white bg-[#cd4245]">
                             <img class="image rounded-full min-w-12 min-h-12 bg-[#444444] m-3"/>
-                            <div class="mt-5 flex justify-between w-full">
-                                <div><h4 class="text-start mr-24">danya-shawaf</h4></div>
-                                <div><h4>12:06 Am</h4></div>
+                            <div class="mt-5 flex justify-between w-56">
+                                <div><h4>danya-shawaf</h4></div>
+                                <div><h4 class="mr-4">12:06 Am</h4></div>
                             </div>
                         </div>
                         <div class="p-3 text-xs border-b-2  border-solid border-b-[#3b3b3b]">
@@ -113,10 +113,10 @@
                 make height full
                 make it flex container with column direction 
                 make it flex 1 as child
-             -->
-            <div>
-                <div class="bg-[#282828] flex justify-between px-5 py-1 text-center border-b-2  border-solid border-b-[#3b3b3b] h-[50px]">
-                    <div class="flex  ">
+            -->
+            <div class="flex flex-col h-full" style="flex: 1;">
+                <div class="bg-[#282828] flex justify-between px-5 py-1 text-center border-b-2  border-solid border-b-[#3b3b3b]">
+                    <div class="flex">
                         <img class="image rounded-full min-w-12 min-h-11 bg-[#444444]">
                         <h4 class="mt-2 ml-2 text-white">danya-shawaf</h4>
                     </div>
@@ -126,8 +126,7 @@
                         <i class="fa-solid fa-ellipsis mx-5"></i>
                     </div>
                 </div>
-                <div class="bg-[#1a1a1a] h-[600px] flex-1 w-full overflow-scroll">
-                </div>
+                <div class="bg-[#1a1a1a] h-full w-full overflow-scroll"></div>
                 <div class="flex justify-between text-[#7e7e7e] bg-[#282828] min-h-[50px] border-2  border-solid border-[#3b3b3b]">
                     <div class="flex text-[#9e9e9e] ml-2 mt-3">
                         <i class="fa-solid fa-paperclip  mx-5 text-xl"></i>
